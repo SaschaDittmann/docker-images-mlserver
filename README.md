@@ -14,8 +14,8 @@ This Docker Image is for development & testing purposes ONLY.
 version          | description                               | size 
 ---------------- | ----------------------------------------- | ------
 [![](https://images.microbadger.com/badges/version/bytesmith/mlserver.svg)](https://hub.docker.com/r/bytesmith/mlserver) | Latest build from the [GitHub Repo](https://github.com/SaschaDittmann/docker-images-mlserver) | [![](https://images.microbadger.com/badges/image/bytesmith/mlserver.svg)](https://microbadger.com/images/bytesmith/mlserver)
-[![](https://images.microbadger.com/badges/version/bytesmith/mlserver:9.3.0.svg)](https://hub.docker.com/r/bytesmith/mlserver) | Microsoft ML Server 9.3.0 - [GitHub Release](https://github.com/SaschaDittmann/docker-images-mlserver/releases/tag/9.3.0).  | [![](https://images.microbadger.com/badges/image/bytesmith/mlserver:9.3.0.svg)](https://microbadger.com/images/bytesmith/mlserver)
-[![](https://images.microbadger.com/badges/version/bytesmith/mlserver:9.2.1.svg)](https://hub.docker.com/r/bytesmith/mlserver) | Microsoft ML Server 9.2.1 - [GitHub Release](https://github.com/SaschaDittmann/docker-images-mlserver/releases/tag/9.2.1).  | [![](https://images.microbadger.com/badges/image/bytesmith/mlserver:9.2.1.svg)](https://microbadger.com/images/bytesmith/mlserver)
+[![](https://images.microbadger.com/badges/version/bytesmith/mlserver:9.3.0.svg)](https://hub.docker.com/r/bytesmith/mlserver) | Microsoft ML Server 9.3.0 - [GitHub Release](https://github.com/SaschaDittmann/docker-images-mlserver/releases/tag/9.3.0).  | [![](https://images.microbadger.com/badges/image/bytesmith/mlserver:9.3.0.svg)](https://microbadger.com/images/bytesmith/mlserver:9.3.0)
+[![](https://images.microbadger.com/badges/version/bytesmith/mlserver:9.2.1.svg)](https://hub.docker.com/r/bytesmith/mlserver) | Microsoft ML Server 9.2.1 - [GitHub Release](https://github.com/SaschaDittmann/docker-images-mlserver/releases/tag/9.2.1).  | [![](https://images.microbadger.com/badges/image/bytesmith/mlserver:9.2.1.svg)](https://microbadger.com/images/bytesmith/mlserver:9.2.1)
 
 ## Quickstart
 
