@@ -1,5 +1,5 @@
 FROM bytesmith/rclient:3.4.3
-MAINTAINER info@bytesmith.de
+LABEL maintainer="info@bytesmith.de"
 
 RUN . /etc/os-release \
 && echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $UBUNTU_CODENAME main" | \
