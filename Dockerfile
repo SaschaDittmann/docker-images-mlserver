@@ -2,7 +2,7 @@ FROM bytesmith/rclient:3.5.2
 
 ARG VCS_REF
 ARG BUILD_DATE
-ARG RCLIENT_VERSION=9.4.7
+ARG MLSERVER_VERSION=9.4.7
 
 LABEL maintainer="info@bytesmith.de" \
 	  org.label-schema.build-date=$BUILD_DATE \
@@ -11,7 +11,7 @@ LABEL maintainer="info@bytesmith.de" \
 	  org.label-schema.url="https://docs.microsoft.com/en-us/machine-learning-server" \
 	  org.label-schema.vcs-ref=$VCS_REF \
 	  org.label-schema.vcs-url="https://github.com/SaschaDittmann/docker-images-mlserver" \
-	  org.label-schema.version=$RCLIENT_VERSION \
+	  org.label-schema.version=$MLSERVER_VERSION \
 	  org.label-schema.schema-version="1.0"
 
 RUN . /etc/os-release \
@@ -20,14 +20,14 @@ RUN . /etc/os-release \
 && apt-key adv --keyserver packages.microsoft.com --recv-keys 52E16F86FEE04B979B07E28DB02C46DF417A0893 \
 && apt-get update \
 && apt-get install -y azure-cli \
-	microsoft-mlserver-python-$RCLIENT_VERSION \
-	microsoft-mlserver-packages-r-$RCLIENT_VERSION microsoft-mlserver-packages-py-$RCLIENT_VERSION \
-	microsoft-mlserver-mml-r-$RCLIENT_VERSION microsoft-mlserver-mml-py-$RCLIENT_VERSION \
-	microsoft-mlserver-mlm-r-$RCLIENT_VERSION  microsoft-mlserver-mlm-py-$RCLIENT_VERSION \
-	microsoft-mlserver-adminutil-$RCLIENT_VERSION microsoft-mlserver-computenode-$RCLIENT_VERSION \
-	microsoft-mlserver-config-rserve-$RCLIENT_VERSION microsoft-mlserver-dotnet-$RCLIENT_VERSION \
-	microsoft-mlserver-webnode-$RCLIENT_VERSION \
-&& /opt/microsoft/mlserver/$RCLIENT_VERSION/bin/R/activate.sh -a -l \
+	microsoft-mlserver-python-$MLSERVER_VERSION \
+	microsoft-mlserver-packages-r-$MLSERVER_VERSION microsoft-mlserver-packages-py-$MLSERVER_VERSION \
+	microsoft-mlserver-mml-r-$MLSERVER_VERSION microsoft-mlserver-mml-py-$MLSERVER_VERSION \
+	microsoft-mlserver-mlm-r-$MLSERVER_VERSION  microsoft-mlserver-mlm-py-$MLSERVER_VERSION \
+	microsoft-mlserver-adminutil-$MLSERVER_VERSION microsoft-mlserver-computenode-$MLSERVER_VERSION \
+	microsoft-mlserver-config-rserve-$MLSERVER_VERSION microsoft-mlserver-dotnet-$MLSERVER_VERSION \
+	microsoft-mlserver-webnode-$MLSERVER_VERSION \
+&& /opt/microsoft/mlserver/$MLSERVER_VERSION/bin/R/activate.sh -a -l \
 && rm -rf /tmp/* \
 && apt-get autoremove -y \
 && apt-get autoclean -y \
