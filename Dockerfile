@@ -19,14 +19,13 @@ RUN . /etc/os-release \
 	tee /etc/apt/sources.list.d/azure-cli.list \
 && apt-key adv --keyserver packages.microsoft.com --recv-keys 52E16F86FEE04B979B07E28DB02C46DF417A0893 \
 && apt-get update \
-&& apt-get install -y azure-cli \
+&& apt-get install -y --no-install-recommends \
+	azure-cli \
 	microsoft-mlserver-python-$MLSERVER_VERSION \
 	microsoft-mlserver-packages-r-$MLSERVER_VERSION microsoft-mlserver-packages-py-$MLSERVER_VERSION \
-	microsoft-mlserver-mml-r-$MLSERVER_VERSION microsoft-mlserver-mml-py-$MLSERVER_VERSION \
 	microsoft-mlserver-mlm-r-$MLSERVER_VERSION  microsoft-mlserver-mlm-py-$MLSERVER_VERSION \
 	microsoft-mlserver-adminutil-$MLSERVER_VERSION microsoft-mlserver-computenode-$MLSERVER_VERSION \
-	microsoft-mlserver-config-rserve-$MLSERVER_VERSION microsoft-mlserver-dotnet-$MLSERVER_VERSION \
-	microsoft-mlserver-webnode-$MLSERVER_VERSION \
+	microsoft-mlserver-config-rserve-$MLSERVER_VERSION microsoft-mlserver-webnode-$MLSERVER_VERSION \
 && /opt/microsoft/mlserver/$MLSERVER_VERSION/bin/R/activate.sh -a -l \
 && rm -rf /tmp/* \
 && apt-get autoremove -y \
