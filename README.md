@@ -2,7 +2,8 @@
 
 [![](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/SaschaDittmann/docker-images-mlserver)
 [![](https://img.shields.io/github/tag/SaschaDittmann/docker-images-mlserver.svg)](https://github.com/SaschaDittmann/docker-images-mlserver)
-
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![](https://ga4gh.azurewebsites.net/api?repo=docker-images-mlserver)](https://github.com/SaschaDittmann/gaforgithub)
 
 ## Docker Images
 
