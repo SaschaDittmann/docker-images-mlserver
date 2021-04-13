@@ -11,6 +11,7 @@ This Docker Image is for development & testing purposes ONLY.
 
 [![](https://img.shields.io/docker/pulls/bytesmith/mlserver.svg)](https://hub.docker.com/r/bytesmith/mlserver)
 [![](https://img.shields.io/docker/automated/bytesmith/mlserver.svg)](https://hub.docker.com/r/bytesmith/mlserver/builds)
+[![](https://img.shields.io/docker/cloud/build/bytesmith/mlserver.svg)](https://hub.docker.com/r/bytesmith/mlserver/builds)
 
 version          | description                               | size 
 ---------------- | ----------------------------------------- | ------
